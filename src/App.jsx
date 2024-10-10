@@ -1,11 +1,11 @@
 import React from "react";
 import BlurBackground from "./components/BlurBackground";
 import Navbar from "./components/Navbar";
-import Hero from "./Hero";
+import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import Experience from "./Experience";
-import Contact from "./Contact";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 const App = () => {
   return (
     <>
