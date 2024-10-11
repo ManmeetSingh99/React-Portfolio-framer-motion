@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 const Technologies = () => {
   const iconVariants = {
     hidden: {
-      x: -300, // More left
+      x: -100, // More left
       opacity: 0,
     },
     visible: {
@@ -64,7 +64,7 @@ const Technologies = () => {
           animate={bounceAnimationUp} // React goes up first
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-9xl size-8 text-cyan-400" />
+          <RiReactjsLine className="text-7xl md:text-9xl size-8 text-cyan-400" />
         </motion.div>
 
         <motion.div
@@ -75,7 +75,7 @@ const Technologies = () => {
           animate={bounceAnimationDown} // JavaScript goes down first
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavascriptFill className="text-9xl size-8 text-orange-400" />
+          <RiJavascriptFill className="text-7xl md:text-9xl size-8 text-orange-400" />
         </motion.div>
 
         <motion.div
@@ -86,7 +86,7 @@ const Technologies = () => {
           animate={bounceAnimationUp} // Java goes up
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavaFill className="text-9xl size-8 text-red-400" />
+          <RiJavaFill className="text-7xl md:text-9xl size-8 text-red-400" />
         </motion.div>
 
         <motion.div
@@ -97,7 +97,7 @@ const Technologies = () => {
           animate={bounceAnimationDown} // Vue goes down
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiVuejsLine className="text-9xl size-8 text-green-400" />
+          <RiVuejsLine className="text-7xl md:text-9xl size-8 text-green-400" />
         </motion.div>
 
         <motion.div
@@ -108,7 +108,7 @@ const Technologies = () => {
           animate={bounceAnimationUp} // HTML goes up
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiHtml5Fill className="text-9xl size-8 text-orange-400" />
+          <RiHtml5Fill className="text-7xl md:text-9xl size-8 text-orange-400" />
         </motion.div>
 
         <motion.div
@@ -119,7 +119,7 @@ const Technologies = () => {
           animate={bounceAnimationDown} // CSS goes down
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiCss3Fill className="text-9xl size-8 text-blue-400" />
+          <RiCss3Fill className="text-7xl md:text-9xl size-8 text-blue-400" />
         </motion.div>
 
         <motion.div
@@ -130,7 +130,7 @@ const Technologies = () => {
           animate={bounceAnimationUp} // GitHub goes up
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiGithubFill className="text-9xl size-8 text-stone-400" />
+          <RiGithubFill className="text-7xl md:text-9xl size-8 text-stone-400" />
         </motion.div>
 
         <motion.div
@@ -141,7 +141,7 @@ const Technologies = () => {
           animate={bounceAnimationDown} // SQL goes down
           className="rounded-2xl border-4 border-neutral-800 px-4 py-1"
         >
-          <RiDatabase2Fill className="text-9xl size-8 text-blue-400" />
+          <RiDatabase2Fill className="text-7xl md:text-9xl size-8 text-blue-400" />
           <span className="text-blue-300">SQL</span>
         </motion.div>
       </div>
