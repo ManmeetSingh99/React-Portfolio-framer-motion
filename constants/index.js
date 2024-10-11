@@ -7,10 +7,10 @@ import projects6 from "../src/assets/projects6.png";
 import projects7 from "../src/assets/projects7.png";
 
 export const LINKS = [
-  { href: "#work", label: "Work" },
   { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#work", label: "Work" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 

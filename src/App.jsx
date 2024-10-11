@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Technologies from "./components/Technologies";
 const App = () => {
   return (
     <>
@@ -14,8 +15,9 @@ const App = () => {
       <main className="antialiased overflow-x-hidden max-w-7xl mx-auto relative z-10">
         <Navbar />
         <Hero />
-        <Projects />
         <About />
+        <Technologies />
+        <Projects />
         <Experience />
         <Contact />
       </main>
