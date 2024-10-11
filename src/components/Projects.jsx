@@ -2,7 +2,25 @@ import { PROJECTS } from "../../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  // Variants for the image entering from the left
+  const getTechColor = (tech) => {
+    switch (tech) {
+      case "React js":
+        return "bg-blue-600";
+      case "Javascript":
+        return "bg-yellow-700";
+      case "HTML":
+        return "bg-orange-600";
+      case "Vue.js":
+        return "bg-green-700";
+      case "CSS":
+        return "bg-blue-900";
+      case "Framer Motion":
+        return "bg-purple-600";
+      default:
+        return "bg-stone-800"; // Default color if no match is found
+    }
+  };
+
   const imageVariants = {
     hidden: {
       opacity: 0,
@@ -75,10 +93,12 @@ const Projects = () => {
               <p className="mb-6 text-slate-300 text-lg">
                 {project.description}
               </p>
-              <div>
+              <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech, index) => (
                   <span
-                    className="mr-3 rounded bg-stone-900 p-3 text-base font-medium text-stone-300"
+                    className={`mr-2 rounded ${getTechColor(
+                      tech
+                    )} p-2 text-base font-semibold text-stone-300`}
                     key={index}
                   >
                     {tech}
