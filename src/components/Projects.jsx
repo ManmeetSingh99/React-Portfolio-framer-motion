@@ -54,7 +54,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="px-6 py-16" id="experience">
+    <section className="px-6 py-16" id="work">
       {/* Title section */}
       <h1 className="text-5xl md:text-7xl font-medium tracking-tight mb-12">
         Work
