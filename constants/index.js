@@ -5,6 +5,10 @@ import projects4 from "../src/assets/projects4.png";
 import projects5 from "../src/assets/projects5.png";
 import projects6 from "../src/assets/projects6.png";
 import projects7 from "../src/assets/projects7.png";
+import projects8 from "../src/assets/projects8.png";
+import project9 from "../src/assets/projects9.png";
+import project10 from "../src/assets/projects10.png";
+import { source } from "framer-motion/client";
 
 export const LINKS = [
   { href: "#about", label: "About" },
@@ -26,20 +30,31 @@ export const HERO_CONTENT = {
 
 export const PROJECTS = [
   {
-    name: "Portfolio",
-    techStack: ["React js", "Javascript", "HTML", "CSS", "Framer Motion"],
+    name: "Zobiko",
+    techStack: ["Vue.js", "Javascript", "HTML", "CSS", "Vuex"],
     description:
-      "A sleek and dynamic platform showcasing my skills and projects. The application highlights my expertise as a front-end developer, featuring applications built with React.js and Vue.js. It includes detailed sections for my professional experience, projects, and skills, along with an interactive UI for an engaging user experience",
-    image: projects1,
-    link: "https://github.com/ManmeetSingh99/React-Portfolio-framer-motion",
+      "This is a modern job and profile management platform built with Nuxt 3 and Vuetify 3, featuring secure authentication, onboarding flows, and custom middleware for route protection. It includes rich text editors for structured content input and supports native sharing of job posts and profiles via the Web Share API. The platform is SEO-friendly with dynamic sitemap generation and is built using a modular, responsive UI architecture for scalability and maintainability.",
+    image: projects8,
+    link: "https://www.web.zobiko.com/",
+    sourceCode: "",
   },
   {
-    name: "Portfolio",
-    techStack: ["React js", "Javascript", "HTML", "CSS"],
+    name: "Warehouse Management System (In Progress)",
+    techStack: ["Vue.js", "Javascript", "HTML", "CSS", "Vuex"],
     description:
-      "A sleek and dynamic platform showcasing my skills and projects. The application highlights my expertise as a front-end developer, featuring applications built with React.js and Vue.js. It includes detailed sections for my professional experience, projects, and skills, along with an interactive UI for an engaging user experience",
-    image: projects2,
-    link: "https://github.com/ManmeetSingh99/react-portfolio",
+      "This Warehouse Management System (WMS) is a scalable and modular application built from scratch using Vue 3, Vuetify 3, and Vuex, designed to handle complex warehouse operations. It features dynamic hierarchical location mapping (Hall → Room → Rack → Bin), multi-tab inventory handling, API-integrated dependent dropdowns, and role-based access control (RBAC). The system includes modules like Dashboard, Inventory, QA, Reports, Notifications, and Settings, all developed with a focus on usability, performance, and maintainability.",
+    image: project9,
+    link: "",
+    sourceCode: "",
+  },
+  {
+    name: "CyberVibe Landing Page",
+    techStack: ["React.js", "Javascript", "HTML", "CSS"],
+    description:
+      "CyberVibe build tools for developers Empower your creativity and bring your VR app ideas to life with our inituitive development tools.Get started today and turn your imagination into immersive reality!",
+    image: project10,
+    link: "https://landing-page-orpin-ten.vercel.app/",
+    sourceCode: "",
   },
   {
     name: "Income Tracker",
@@ -47,7 +62,8 @@ export const PROJECTS = [
     description:
       "A convenient application for managing and tracking your income. Users can add income entries with a detailed description, amount, and date.Additionally, users can delete entries as needed, maintaining an up-to-date and clutter-free tracker.",
     image: projects3,
-    link: "https://github.com/ManmeetSingh99/vue-income-tracker",
+    link: "https://vue-income-tracker-lyart.vercel.app/",
+    sourceCode: "",
   },
   {
     name: " Keeper App",
@@ -55,8 +71,29 @@ export const PROJECTS = [
       "A simple and intuitive note-taking application that allows users to easily add and manage notes. Users can create notes with titles and detailed content, ensuring all important information is organized and readily accessible. The app features a clean and user-friendly interface, making it easy to capture thoughts, to-dos, and ideas on the go.",
     techStack: ["React js", "Javascript", "HTML", "CSS"],
     image: projects4,
-    link: "https://github.com/ManmeetSingh99/keeper-app",
+    link: "",
+    sourceCode: "https://github.com/ManmeetSingh99/keeper-app",
   },
+  {
+    name: "Portfolio",
+    techStack: ["React js", "Javascript", "HTML", "CSS", "Framer Motion"],
+    description:
+      "A sleek and dynamic platform showcasing my skills and projects. The application highlights my expertise as a front-end developer, featuring applications built with React.js and Vue.js. It includes detailed sections for my professional experience, projects, and skills, along with an interactive UI for an engaging user experience",
+    image: projects1,
+    sourceCode:
+      "https://github.com/ManmeetSingh99/React-Portfolio-framer-motion",
+    link: "",
+  },
+  {
+    name: "Portfolio",
+    techStack: ["React js", "Javascript", "HTML", "CSS"],
+    description:
+      "A sleek and dynamic platform showcasing my skills and projects. The application highlights my expertise as a front-end developer, featuring applications built with React.js and Vue.js. It includes detailed sections for my professional experience, projects, and skills, along with an interactive UI for an engaging user experience",
+    image: projects2,
+    sourceCode: "https://github.com/ManmeetSingh99/react-portfolio",
+    link: "",
+  },
+
   {
     name: "Portfolio",
     description:
@@ -64,6 +101,7 @@ export const PROJECTS = [
     techStack: ["Javascript", "HTML", "CSS"],
     image: projects5,
     link: "https://github.com/ManmeetSingh99/PortfolioJs.github.io",
+    sourceCode: "",
   },
   {
     name: "Weather Application",
@@ -72,6 +110,7 @@ export const PROJECTS = [
     techStack: ["React js", "Javascript", "HTML", "CSS"],
     image: projects6,
     link: "https://github.com/ManmeetSingh99/WeatherWebsiteReact",
+    source: "",
   },
   {
     name: "Portfolio",
@@ -79,13 +118,14 @@ export const PROJECTS = [
       "A sleek and dynamic platform showcasing my skills and projects. The application highlights my expertise as a front-end developer, featuring applications built with React.js and Vue.js. It includes detailed sections for my professional experience, projects, and skills, along with an interactive UI for an engaging user experience",
     techStack: ["React js", "Javascript", "HTML", "CSS"],
     image: projects7,
-    link: "https://github.com/ManmeetSingh99/animated-portfolio-react",
+    link: "https://animated-portfolio-react.vercel.app/",
+    sourceCode: "",
   },
 ];
 
 export const ABOUT_CONTENT = {
   paragraphs: [
-    "I am a dedicated frontend developer with a passion for building modern web applications that are both functional and aesthetically pleasing. Over the years, I have worked on numerous projects ranging from single-page applications to complex multi-tiered systems, always ensuring high performance and seamless user experiences.",
+    "I’m a frontend developer with 1 year of hands-on experience building responsive, high-performance web applications. I specialize in React, Vue.js, and Tailwind CSS, crafting user interfaces that are both intuitive and visually engaging.",
     "I specialize in using technologies like React, Vue.js and Tailwind CSS to create responsive and scalable interfaces. My focus is on writing clean, maintainable code while collaborating with cross-functional teams to deliver projects that meet both business goals and user needs. I thrive in environments that challenge me to continuously learn and grow.",
   ],
 };
@@ -96,9 +136,19 @@ export const EXPERIENCES = [
     title: "Front-End Developer",
     company: "CodeNicely Pvt. Ltd, Raipur",
     description: [
-      // "Leading the development of scalable frontend architecture for enterprise-level applications.",
-      // "Collaborating with cross-functional teams to deliver high-quality, user-centric solutions.",
-      // "Driving innovation through continuous improvements in performance and UI/UX design.",
+      " Developed a scalable, modular frontend architecture using Vue 3 and Vuetify 3.",
+
+      "Collaborated with backend developers and product teams to design and implement user interfaces.",
+
+      "Ensured state consistency and modularity using Vuex for complex data flows across multiple tabs/modules.",
+
+      "Implemented dynamic form structures, multi-level data hierarchies, and interdependent dropdowns.",
+
+      "Integrated rich text editors and dynamic sharing features using Web APIs.",
+
+      "Managed user access and redirection using custom middleware and authentication logic in Nuxt 3.",
+      "Optimized performance and user experience through lazy loading, code splitting, and efficient state management.",
+      "Developed and maintained a large-scale Warehouse Management System (WMS) using Vue 3, Vuetify 3, and Vuex.",
     ],
   },
   {

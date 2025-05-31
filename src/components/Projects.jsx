@@ -17,7 +17,7 @@ const Projects = () => {
       case "Framer Motion":
         return "bg-purple-600";
       default:
-        return "bg-stone-800"; // Default color if no match is found
+        return "bg-stone-800";
     }
   };
 
@@ -36,7 +36,6 @@ const Projects = () => {
     },
   };
 
-  // Variants for the content (text and tech stack) entering from the right
   const contentVariants = {
     hidden: {
       opacity: 0,
@@ -48,14 +47,13 @@ const Projects = () => {
       transition: {
         duration: 0.6,
         ease: "easeOut",
-        delay: 0.3, // Delay to ensure it happens after the image
+        delay: 0.3,
       },
     },
   };
 
   return (
     <section className="px-6 py-16" id="work">
-      {/* Title section */}
       <h1 className="text-5xl md:text-7xl font-medium tracking-tight mb-12">
         Work
       </h1>
@@ -64,7 +62,6 @@ const Projects = () => {
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-12 flex flex-wrap lg:justify-center">
-            {/* Animate the image coming from the left */}
             <motion.div
               className="w-full lg:w-1/3"
               initial="hidden"
@@ -74,14 +71,13 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                alt={project.title}
+                alt={project.name}
                 width={300}
                 height={300}
                 className="mb-6 rounded-lg object-cover"
               />
             </motion.div>
 
-            {/* Animate the content (text and tech stack) coming from the right */}
             <motion.div
               className="w-full max-w-2xl lg:w-2/3"
               initial="hidden"
@@ -93,17 +89,41 @@ const Projects = () => {
               <p className="mb-6 text-slate-300 text-lg">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.techStack.map((tech, index) => (
                   <span
+                    key={index}
                     className={`mr-2 rounded ${getTechColor(
                       tech
                     )} p-2 text-base font-semibold text-stone-300`}
-                    key={index}
                   >
                     {tech}
                   </span>
                 ))}
+              </div>
+
+              <div className="flex gap-4">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded bg-white text-black font-semibold px-4 py-2 transition-all duration-300 hover:bg-opacity-80"
+                  >
+                    View Project
+                  </a>
+                )}
+                {project.sourceCode && (
+                  <a
+                    href={project.sourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded border border-white text-white font-semibold px-4 py-2 transition-all duration-300 hover:bg-white hover:text-black"
+                  >
+                    Source Code
+                  </a>
+                )}
               </div>
             </motion.div>
           </div>
